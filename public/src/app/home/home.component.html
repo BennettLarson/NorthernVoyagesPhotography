@@ -1,0 +1,14 @@
+<div *ngIf="imagesReceived" >
+  <ngb-carousel data-interval="10000" [ngClass]="imagesLoaded === 1 ? 'show' : 'dontShow'">
+      <ng-template ngbSlide>
+        <img src='https://www.flickr.com/photos/166640974@N07/46216984902/in/dateposted-public/' (load)="imageLoaded()" alt="Random first slide">
+      </ng-template>
+      <!-- <ng-template ngbSlide>
+        <img src='{{images[1]}}' (load)="imageLoaded()" alt="Random second slide">
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src='{{images[2]}}' (load)="imageLoaded()" alt="Random third slide">
+      </ng-template> -->
+    </ngb-carousel>
+</div>
+

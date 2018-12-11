@@ -1,0 +1,62 @@
+
+
+// .nav-link {
+//     color: grey;
+// }
+
+
+.nav-link {
+    font-size: 110%;
+    font-family: "PT Sans Narrow",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    color: rgba(0,0,0,1);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0.45em;
+    word-spacing: 0.00em;
+    text-transform: uppercase;
+    font-variant: normal;
+    // line-height: 120%;
+}
+
+.mainLink {
+    font-size: 150%;
+}
+
+@media (max-width: 767px) {
+    .nav-link {
+        margin: 0 0 0 5%;
+
+    }
+} 
+
+@media (min-width: 768px) {
+    .nav-link + .nav-link{
+        margin: 0 0 0 5%;
+    }
+}
+
+.coloredBackground {
+    background: white;
+}
+
+
+.navbar {
+    z-index: 9;
+    width: 99.9%;
+    // font: normal 1em  OFL Sorts Mill Goudy, Noto Nastaliq Urdu,     My Noto Nastaliq Urdu, Georgia, serif;
+    margin-bottom: 4% !important;
+    margin:0px auto;
+
+    
+}
+
+.nav-link:hover {
+   text-decoration: underline;
+}
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: center;
+}
+

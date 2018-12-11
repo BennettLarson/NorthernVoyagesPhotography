@@ -1,0 +1,60 @@
+<div *ngIf="!successfulSubmission">
+  <form [formGroup]="detailForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div [hidden]="validFormSubmitted" class="row">
+        <div class="col-sm">
+          <input placeholder="Name" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.name.status === 'INVALID'}" type="text" formControlName="name" required>
+          <input placeholder="Email" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.email.status === 'INVALID'}" type="text" formControlName="email" required>
+          <select formControlName="service" required [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.service.status === 'INVALID'}" >
+            <option disabled selected value>Requested Service</option>
+            <option>Portrait Photography</option>
+            <option>Wedding Photography</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <input placeholder="Phone" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.phone.status === 'INVALID'}" type="text" formControlName="phone" required>
+          <input placeholder="Event Date" type="text" onfocus="(this.type='date')" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.date.status === 'INVALID'}" formControlName="date" required>
+        </div>
+      </div>
+      <div>
+        <textarea placeholder="Tell me more about yourself! What ideas do you have? Send me your availability, and let's get started!" class = "textArea" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.additionalInfo.status === 'INVALID'}" type="text" formControlName="additionalInfo" required>
+          </textarea>
+        <p class="errorText" ngClass="{invalidFormSubmitted ? 'show' : 'dontShow' ">
+          {{invalidFormSubmitted ? 'Please fill out the highlighted fields.' : ''}}
+        </p>
+      </div>
+      <div class="submitDiv">
+        <button type="submit" >{{submitted ? 'Submitting...': 'Submit'}} </button>
+        <span>
+          <img [hidden]="!submitted" class="catGif" src="../../assets/images/catGifGreyRotated.gif"/>
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div *ngIf="successfulSubmission">
+  <div class="container">
+      <p> success! </p>
+  </div>
+</div>
+
+
+
+<!--
+
+<div class="row">
+  <textarea placeholder="Tell me more about yourself! What ideas do you have? Send me your availability, and let's get started!" class = "textArea" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.additionalInfo.status === 'INVALID'}" type="text" formControlName="additionalInfo" required>
+  </textarea>
+</div> -->
+
+
+<!-- <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">Available by appointment only<br><br>Urban Dekay Photography<br><br>218-213-8382<br><br>kp@gmail.com<br></p>
+      </div>
+    </div>
+  </div> -->
+

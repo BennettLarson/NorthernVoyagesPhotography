@@ -1,0 +1,11 @@
+<nav *ngIf="nav.visible" class="navbar navbar-expand-md mb-4 fixed-top" [ngClass]="{'coloredBackground': currentPage !== '/'}" >
+  <div class="navbar-collapse" >
+      <a class="nav-link" [ngClass]="{'active': currentPage === '/about'}" routerLink="about" (click)="pageSelected('/about')">About</a>
+      <a class="nav-link" [ngClass]="{'active': currentPage === '/wedding'}" routerLink="wedding" (click)="pageSelected('/wedding')">Weddings</a>
+      <a class="nav-link navbar-brand mainLink" [ngClass]="{'active': currentPage === '/'}" routerLink="" (click)="pageSelected('/')">KAYLA  DONNELLE</a>
+      <a class="nav-link" [ngClass]="{'active': currentPage === '/portraits'}" routerLink="portraits" (click)="pageSelected('/portraits')">Portraits </a>
+      <a class="nav-link" [ngClass]="{'active': currentPage === '/contact'}" routerLink="contact" (click)="pageSelected('/contact')">Inquire </a>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

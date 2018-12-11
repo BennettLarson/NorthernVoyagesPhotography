@@ -1,0 +1,21 @@
+img {
+    width:100%;
+    height: 100vh;
+}
+
+ngb-carousel{
+    position: absolute;
+    width:100%;
+    top: 0;
+    margin:auto;
+}
+
+
+
+
+.show {
+    visibility: visible;
+}
+.dontShow {
+    visibility: hidden
+}
