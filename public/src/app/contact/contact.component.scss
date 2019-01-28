@@ -1,3 +1,7 @@
+.row {
+    margin-top: 0% !important;
+    display: block;
+}
 .error {
     border-color: red;
 }
@@ -42,7 +46,7 @@ p {
 
 input, select {
    height: 2em;
-   width: 100%;
+   width: 35%;
 }
 
 select {
@@ -63,16 +67,16 @@ input {
 
 textarea {
     height: 10em;
-    width: 102%; // because the padding left on the col-sm + col-sm I need to go over 100% so the textbox lines up
+    width: 35%;
     margin-bottom: 0.75%;
     padding-left: 1.2%;
 }
 
 
-
-.col-sm {
-    padding-right: 0%;
+modal {
+    margin-top: 25%;
 }
+
 
 
 button {

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LazyLoadImageModule, intersectionObserverPreset } from 'ng-lazyload-image';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { WeddingComponent } from './wedding/wedding.component';
 import { ContactComponent } from './contact/contact.component';
 import { SeniorsComponent } from './portraits/seniors/seniors.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { GalleryImageComponent } from './components/gallery-image/gallery-image.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,19 @@ import { SeniorsComponent } from './portraits/seniors/seniors.component';
     AboutComponent,
     WeddingComponent,
     ContactComponent,
-    SeniorsComponent
+    SeniorsComponent,
+    ModalComponent,
+    GalleryImageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyLoadImageModule.forRoot({
+      preset: intersectionObserverPreset
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

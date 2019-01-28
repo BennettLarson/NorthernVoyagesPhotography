@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +11,9 @@ export class AppComponent implements OnInit{
 
   public currentPage: string;
 
-  constructor(private router:Router, private nav:AppService) {}
+  constructor(private router:Router) {}
 
   ngOnInit() {
-    // this.nav.show();
   }
 
   ngDoCheck() {

@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms'
 import { ContactService } from './contact.service';
-import { Button } from 'protractor';
 
 @Component({
   selector: 'app-contact',
@@ -35,7 +34,6 @@ export class ContactComponent {
         this.invalidFormSubmitted = false;
         this.contactService.sendEmail(this.detailForm.value).subscribe(
           res => { 
-            console.log('hello');
             console.log('status: ' + res.status);
             if (res.status === 204) {
               this.successfulSubmission = true;

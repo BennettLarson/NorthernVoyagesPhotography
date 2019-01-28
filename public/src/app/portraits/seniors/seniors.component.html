@@ -1,32 +1,15 @@
-<div class="row"> 
-  <button (click)="getImages"></button>
+<div class="row">
   <div class="column">
-    <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
-    <img src="../../../assets/images/three.jpg" style="width:100%">
-    <img src="../../../assets/images/two.jpeg" style="width:100%">
-    <img src="../../../assets/images/one.jpg" style="width:100%">
-    <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
+    <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:0:4"></gallery-image>
   </div>
   <div class="column">
-    <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
-    <img src="../../../assets/images/two.jpeg" style="width:100%">
-    <img src="../../../assets/images/three.jpg" style="width:100%">
-    <img src="../../../assets/images/one.jpg" style="width:100%">
-    <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
+    <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:4:8"></gallery-image>
   </div>
-    <div class="column">
-      <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
-      <img src="../../../assets/images/three.jpg" style="width:100%">
-      <img src="../../../assets/images/two.jpeg" style="width:100%">
-      <img src="../../../assets/images/one.jpg" style="width:100%">
-      <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
-      <img src="../../../assets/images/three.jpg" style="width:100%">
-      <img src="../../../assets/images/two.jpeg" style="width:100%">
-      <img src="../../../assets/images/one.jpg" style="width:100%">
-      <img src="../../../assets/images/_DSC8860.jpg" style="width:100%">
-    </div>
+  <div class="column">
+      <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:8:12"></gallery-image>
+  </div>
+  <div class="column">
+      <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:12:16"></gallery-image>
+  </div> 
 </div>            
 
