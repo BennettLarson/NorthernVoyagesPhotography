@@ -6,8 +6,6 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "flickr-sdk": "^3.7.0",
-    "googleapis": "^27.0.0",
     "mysql": "^2.16.0",
     "ngx-bootstrap": "^3.0.1",
     "nodemailer": "^4.6.8",
