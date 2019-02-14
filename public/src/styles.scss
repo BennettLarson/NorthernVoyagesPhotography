@@ -9,8 +9,12 @@ body {
     background-color:rgb(216, 216, 216);
 }
 
-.row, .container {
+.container {
     margin-top: 10% !important;
 }
 
 .carousel-indicators { visibility: hidden; }
+
+.margin-top {
+    margin-top: 10%;
+}

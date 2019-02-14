@@ -1,15 +1,15 @@
-<div class="row">
-  <div class="column">
-    <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:0:4"></gallery-image>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <gallery-image  *ngFor="let image of _images | slice:0:4" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+    </div>
+    <div class="column">
+      <gallery-image *ngFor="let image of _images | slice:4:8" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+    </div>
+    <div class="column">
+      <gallery-image *ngFor="let image of _images | slice:8:12" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+    </div>
+    <div class="column">
+      <gallery-image *ngFor="let image of _images | slice:12:16" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
   </div>
-  <div class="column">
-    <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:4:8"></gallery-image>
-  </div>
-  <div class="column">
-      <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:8:12"></gallery-image>
-  </div>
-  <div class="column">
-      <gallery-image [images]="_images" [imagesIndex]="_images.indexOf(image)" *ngFor="let image of _images | slice:12:16"></gallery-image>
-  </div> 
-</div>            
-
+</div>
