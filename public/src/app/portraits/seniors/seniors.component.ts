@@ -11,23 +11,26 @@ export class SeniorsComponent implements OnInit {
     "../../../assets/images/one.jpg",
     "../../../assets/images/_DSC8860.jpg",
     "../../../assets/images/three.jpg",
-    "../../../assets/images/one.jpg",
-    "../../../assets/images/one.jpg",
     "../../../assets/images/two.jpeg",
-    "../../../assets/images/three.jpg",
-    "../../../assets/images/two.jpeg",
-    "../../../assets/images/two.jpeg",
-    "../../../assets/images/_DSC8860.jpg",
-    "../../../assets/images/three.jpg",
-    "../../../assets/images/two.jpeg",
-    "../../../assets/images/_DSC8860.jpg",
-    "../../../assets/images/three.jpg",
-    "../../../assets/images/one.jpg",
-    "../../../assets/images/_DSC8860.jpg"
+    "../../../assets/images/_DSC8859.jpg",
+    "../../../assets/images/compressedImg1.jpg",
+    "../../../assets/images/compressedImg2.jpg",
+    "../../../assets/images/compressedImg3.jpg",
+    "../../../assets/images/kayBB.jpg",
+    "../../../assets/images/_DSC8480-2.jpg",
+    "../../../assets/images/_DSC8481-3.jpg",
+    "../../../assets/images/_DSC8518-2.jpg",
+    "../../../assets/images/_DSC8535-2.jpg",
+    "../../../assets/images/_DSC8546-3.jpg",
+    "../../../assets/images/_DSC8605.jpg",
+    "../../../assets/images/_DSC8576-2.jpg"
+
+
+    
   ];
-  constructor() { }
+  constructor() { 
+   }
 
   ngOnInit() {
   }
-
 }

@@ -1,18 +1,8 @@
 <ng-template #content let-modal>
-  <!-- <div class="modal-header"> -->
-    <!-- 
-    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>-->
-  <!-- </div>  -->
   <div class="modal-body">
     <img class="imgBtn closeBtn" src="../../../assets/images/closeIcon.png" (click)="modal.dismiss('Close click')" >
     <img class="imgBtn forwardBtn" src="../../../assets/images/forwardArrow.png" (click)="forwardButtonClicked()"  >
     <img class="imgBtn backBtn" src="../../../assets/images/backArrow.png"  (click)="backButtonClicked()" >
     <img class="actualImg" [src]="images[currentIndex]" style="width: 100%">
   </div>
-  <!-- <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Close click')">Close</button>
-  </div> -->
 </ng-template>

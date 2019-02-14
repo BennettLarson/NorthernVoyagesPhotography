@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="column">
-      <gallery-image  *ngFor="let image of _images | slice:0:4" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+      <gallery-image *ngFor="let image of _images | slice:0:4" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
     </div>
     <div class="column">
       <gallery-image *ngFor="let image of _images | slice:4:8" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
