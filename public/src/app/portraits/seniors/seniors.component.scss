@@ -3,6 +3,13 @@
     margin-left: 2%;
 }
 
+.text-column {
+    width: 22em;
+    margin-left: 2%;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
 
 .column:nth-child(even) {
     margin-top: 5%;
@@ -40,10 +47,28 @@
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
-    background: url("../../../assets/images/_DSC8480-2.jpg") no-repeat;
+    background: url("../../../assets/images/_DSC8535-2.jpg") no-repeat;
     background-size: cover;
     background-position: 0px;
     // background-image: url("../../assets/images/kayBB.jpg");
     // background-color: rgb(250,228, 216);
   }
 
+  .body {
+      padding: 0em 1.5em;
+  }
+
+  .header {
+    padding: 4em 0em 1em 0em;
+    font-size: 125% !important;
+    font-family: "PT Sans Narrow",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    color: rgba(0,0,0,1);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0.45em;
+    word-spacing: 0.00em;
+    text-transform: uppercase;
+    font-variant: normal;
+  }

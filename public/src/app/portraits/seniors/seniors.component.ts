@@ -8,8 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class SeniorsComponent implements OnInit {
   public _images = [
-    "../../../assets/images/one.jpg",
     "../../../assets/images/_DSC8860.jpg",
+    "../../../assets/images/one.jpg",
     "../../../assets/images/three.jpg",
     "../../../assets/images/two.jpeg",
     "../../../assets/images/_DSC8859.jpg",
