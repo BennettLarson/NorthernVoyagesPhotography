@@ -1,13 +1,24 @@
-<div class="container">
-  <div class="row">
-    <div class="column">
-      <gallery-image *ngFor="let image of _images | slice:0:5" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
-    </div>
-    <div class="column">
-      <gallery-image *ngFor="let image of _images | slice:5:10" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
-    </div>
-    <div class="column">
-      <gallery-image *ngFor="let image of _images | slice:10:15" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+
+
+
+<div class="MainContainer">
+
+  <div class="ParallaxContainer">
+  </div>
+
+  <div class="ContentContainer">
+    <div class="content">
+      <div class="row">
+        <div class="column">
+          <gallery-image *ngFor="let image of _images | slice:0:5" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+        </div>
+        <div class="column">
+          <gallery-image *ngFor="let image of _images | slice:5:10" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+        </div>
+        <div class="column">
+          <gallery-image *ngFor="let image of _images | slice:10:15" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+        </div>
+      </div>
     </div>
   </div>
 </div>

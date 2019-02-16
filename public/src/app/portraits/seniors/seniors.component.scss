@@ -3,10 +3,47 @@
     margin-left: 2%;
 }
 
+
 .column:nth-child(even) {
     margin-top: 5%;
 }
 
-.container {
+.content {
     margin-left: 4.6%;
+    // margin-top: 10% !important;
 }
+
+
+.MainContainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+.ContentContainer {
+    position: relative;
+    display: block;
+    background-color: white;
+    // background-color:rgb(216, 216, 216);
+    z-index: 1;
+}
+
+.ParallaxContainer {
+    width: 100vw;
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url("../../../assets/images/_DSC8480-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0px;
+    // background-image: url("../../assets/images/kayBB.jpg");
+    // background-color: rgb(250,228, 216);
+  }
+
