@@ -23,7 +23,6 @@ export class SeniorsComponent implements OnInit {
     "../../../assets/images/_DSC8535-2.jpg",
     "../../../assets/images/_DSC8546-3.jpg",
     "../../../assets/images/_DSC8605.jpg",
-    "../../../assets/images/_DSC8576-2.jpg"
 
 
     
