@@ -1,9 +1,11 @@
-<ng-template #content let-modal>
-  <div class="modal-body">
-    <img class="imgBtn closeBtn" src="../../../assets/images/closeIcon.png" (click)="modal.dismiss('Close click')" >
-    <img class="imgBtn forwardBtn" src="../../../assets/images/forwardArrow.png" (click)="forwardButtonClicked()"  >
-    <!-- <img class="imgBtn backBtn" src="../../../assets/images/backArrow.png"   > -->
-    <i class="fa fa-chevron-left" (click)="backButtonClicked()"></i>
-    <img class="actualImg" [src]="images[currentIndex]" style="width: 100%">
-  </div>
-</ng-template>
+<!-- <div class="modal-dialog"> -->
+  <ng-template #content let-modal>
+    <div class="modal-body">
+      <img class="imgBtn closeBtn" src="../../../assets/images/closeIcon.png" (click)="modal.dismiss('Close click')" >
+      <img class="imgBtn forwardBtn" src="../../../assets/images/forwardArrow.png" (click)="forwardButtonClicked()"  >
+      <!-- <img class="imgBtn backBtn" src="../../../assets/images/backArrow.png"   > -->
+      <i class="fa fa-chevron-left" (click)="backButtonClicked()"></i>
+      <img class="actualImg" [src]="images[currentIndex]" style="width: 100%">
+    </div>
+  </ng-template>
+<!-- </div> -->
