@@ -19,6 +19,7 @@ export class ModalComponent {
   constructor(private modalService: NgbModal) {}
 
   public open() {
+    this.setRow(this.currentIndex % 5, this.currentIndex);
     this.modalService.open(this.content, {size: 'lg', ariaLabelledBy: 'modal-basic-title'})
   }
 
@@ -29,23 +30,22 @@ export class ModalComponent {
   }
 
   public forwardButtonClicked() {
-    if (this.currentIndex + 4 < 16) {
-      this.currentIndex = this.currentIndex + 4;
-    } else if (this.currentIndex === 15 ) {
-      console.log('end of the road jack!');
-      this.setRow(0);
-    } else {
-      this.setRow(this.row + 1);
+    if (this.currentIndex + this.images.length/3 < this.images.length) { // not at the end of a row
+      this.currentIndex = this.currentIndex + this.images.length/3;
+    } else if (this.currentIndex === this.images.length - 1 ) { // at the end of the final row
+      this.setRow(0); 
+    } else { // at the end of a row other than the final row
+      this.setRow(this.row + 1); 
     }
   }
 
   public backButtonClicked() {
-    if (this.currentIndex - 4 > -1) {
-      this.currentIndex = this.currentIndex - 4;
-    } else if (this.row === 0)  {
-      this.setRow(3, 15);
-    } else {
-      this.setRow(this.currentIndex - 1, this.currentIndex + 11  );
+    if (this.currentIndex - this.images.length/3 > -1) { // not at the beginning of a row
+      this.currentIndex = this.currentIndex - this.images.length/3;
+    } else if (this.row === 0)  { // at the beginning of the first row
+      this.setRow(this.images.length/3 - 1, this.images.length - 1);
+    } else { // at the beginning of a row other than the first
+      this.setRow(this.currentIndex - 1, ((this.currentIndex -1) +  2/3*this.images.length));
     }
   }
 
