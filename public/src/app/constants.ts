@@ -1,4 +1,5 @@
 export class Constants {
+    public w_cover_image: string = "../../../assets/images/_DSC8535-2.jpg";
     public w_images: string[] = 
     [
         "../../../assets/images/compressedImg3.jpg",

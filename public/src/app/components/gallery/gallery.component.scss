@@ -68,7 +68,22 @@
     z-index: 1;
 }
 
-.ParallaxContainer {
+.WeddingParallaxContainer {
+    width: 100vw;
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url("../../../assets/images/_DSC8546-3.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0px;
+  }
+
+  .CoupleParallaxContainer {
     width: 100vw;
     display: flex;
     flex: 1 0 auto;

@@ -1,5 +1,5 @@
 <div class="MainContainer">
-  <div class="ParallaxContainer">
+  <div [ngClass]="currentPage === '/wedding' ? 'WeddingParallaxContainer' : 'CoupleParallaxContainer'">
   </div>
   <div class="ContentContainer">
     <div class="content">
