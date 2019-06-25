@@ -47,7 +47,7 @@ app.post('/api/sendEmail', (req,res) => {
     });
 
     let mailOptions = {
-        from: 'Tom Jones <test@gmail.com>',
+        from: body.name,
         to: 'lars4652@umn.edu',
         subject: 'New Inquiry',
         html: `

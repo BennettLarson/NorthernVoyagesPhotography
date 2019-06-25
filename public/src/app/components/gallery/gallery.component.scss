@@ -1,4 +1,4 @@
-.column {
+.image-column {
     width: 22em;
     margin-left: 2%;
 }
@@ -11,13 +11,45 @@
 }
 
 
-.column:nth-child(even) {
+.image-column:nth-child(even) {
     margin-top: 5%;
 }
 
 .content {
-    margin-left: 4.6%;
-    // margin-top: 10% !important;
+    margin-left: 4.6%; // helps center things
+}
+
+.card {
+    width: 25em;
+    margin-top: 1em;
+    border-radius: 0;
+    border-color: darkgrey;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 0;
+    border-color: darkgrey;
+    text-align: center;
+}
+
+.card-header {
+    color: white;
+    background-color: darkgrey;
+    text-align: center;
+    border-radius: 0;
+    border-color: darkgrey;
+}
+
+.card-footer {
+    border-radius: 0;
+    border-color: darkgrey;
+}
+
+.pricing {
+    justify-content: center;
+    padding-bottom: 5%;
+    margin-left: -6.6%; // offsets the margin left of content. 
 }
 
 

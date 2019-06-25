@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
-import { PortraitsComponent } from './portraits/portraits.component';
 import { AboutComponent } from './about/about.component';
-import { WeddingComponent } from './wedding/wedding.component';
 import { ContactComponent } from './contact/contact.component';
-import { SeniorsComponent } from './portraits/seniors/seniors.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -14,15 +12,12 @@ const routes: Routes = [
   },
   {
     path: 'wedding',
-    component: WeddingComponent
+    component: GalleryComponent
   },
   {
-    path: 'portraits',
-    component: PortraitsComponent
-  },
-  {
-    path: 'portraits/seniors',
-    component: SeniorsComponent
+    path: 'couple',
+    component: GalleryComponent
+
   },
   {
     path: 'contact',

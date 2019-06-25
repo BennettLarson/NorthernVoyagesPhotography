@@ -3,4 +3,9 @@ img {
     height: 30em;
     margin-bottom: 7%;
     object-fit: cover;
+    cursor: pointer;
+}
+
+img:hover {
+    opacity: 0.5;
 }

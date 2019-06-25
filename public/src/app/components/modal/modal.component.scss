@@ -7,14 +7,8 @@
     position: absolute;
     opacity: 0.5;
     margin-left: 96%;
+    cursor: pointer;
 }
-
-// .forwardBtn {
-//     width: 4%;
-//     position: absolute;
-//     margin-top: 30%;
-//     margin-left: 92%;
-// }
 
 .fa-chevron-left {
     width: 10%;
@@ -23,6 +17,7 @@
     padding-top: 40%;
     padding-left: 4%;
     opacity: 0;
+    cursor: pointer;
 }
 
 .fa-chevron-right {
@@ -33,6 +28,7 @@
     margin-left: 92%;
     margin-top: 5%;
     opacity: 0;
+    cursor: pointer;
 }
 
 .chevron:hover {
