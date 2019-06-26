@@ -22,9 +22,7 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit() {
     this.constants = new Constants();
-    console.log('ON INIT');
     this.currentPage = this.router.url;
-    console.log('CURRENT PAGE: ' + this.currentPage);
     if (this.currentPage === '/wedding') {
       // this.cover_image = this.constants.w_cover_image;
       this._images = this.constants.w_images;

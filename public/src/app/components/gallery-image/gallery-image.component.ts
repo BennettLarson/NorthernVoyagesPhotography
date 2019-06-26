@@ -21,7 +21,6 @@ export class GalleryImageComponent implements OnInit {
   }
 
   public imageClicked() {
-    // console.log(index);
     this.modal.setImages(this.images);
     this.modal.setRow(this.imagesIndex);
     this.modal.open();
