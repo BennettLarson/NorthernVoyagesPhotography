@@ -14,11 +14,13 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "cd public; ng build --aot --prod"
   },
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "10.x"
+    "node": "10.12.0",
+    "npm": "6.4.1"
   }
 }

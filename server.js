@@ -74,7 +74,7 @@ app.post('/api/sendEmail', (req,res) => {
 });
 
 app.get('*', (req,res) => {
-    fs.createReadStream(__dirname + '/public/src/index.html').pipe(res);
+    fs.createReadStream(__dirname + '/public/dist/public/index.html').pipe(res);
 })
 
 app.listen(port, () => console.log('Gator app listening on port 3000!'));
