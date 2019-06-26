@@ -3,7 +3,7 @@ export class Constants {
     public w_images: string[] = 
     [
         "../../../assets/images/compressedImg3.jpg",
-        "../../../assets/images/kayBB.jpg",
+        "../../../assets/images/kayBB-min.jpg",
         "../../../assets/images/_DSC8480-2-min.jpg",
         "../../../assets/images/_DSC8481-3-min.jpg",
         "../../../assets/images/_DSC8518-2-min.jpg",
@@ -25,21 +25,21 @@ export class Constants {
     
     public c_images: string[] = 
     [
-        "../../../assets/images/_DSC8860.jpg",
-        "../../../assets/images/one.jpg",
-        "../../../assets/images/three.jpg",
-        "../../../assets/images/two.jpeg",
-        "../../../assets/images/_DSC8859.jpg",
+        "../../../assets/images/_DSC8860-min.jpg",
+        "../../../assets/images/one-min.jpg",
+        "../../../assets/images/three-min.jpg",
+        "../../../assets/images/two-min.jpeg",
+        "../../../assets/images/_DSC8859-min.jpg",
         "../../../assets/images/compressedImg1.jpg",
         "../../../assets/images/compressedImg2.jpg",
         "../../../assets/images/compressedImg3.jpg",
-        "../../../assets/images/kayBB.jpg",
-        "../../../assets/images/_DSC8480-2.jpg",
-        "../../../assets/images/_DSC8481-3.jpg",
-        "../../../assets/images/_DSC8518-2.jpg",
-        "../../../assets/images/_DSC8535-2.jpg",
-        "../../../assets/images/_DSC8546-3.jpg",
-        "../../../assets/images/_DSC8605.jpg"
+        "../../../assets/images/kayBB-min.jpg",
+        "../../../assets/images/_DSC8480-2-min.jpg",
+        "../../../assets/images/_DSC8481-3-min.jpg",
+        "../../../assets/images/_DSC8518-2-min.jpg",
+        "../../../assets/images/_DSC8535-2-min.jpg",
+        "../../../assets/images/_DSC8546-3-min.jpg",
+        "../../../assets/images/_DSC8605-min.jpg"
     ];
 
     public c_text_col1: string = 'C Cookie tart liquorice. Cookie fruitcake powder gummi bears carrot cake muffin. Lemon drops gummi bears candy canes chupa chups ice cream ice cream cotton candy jelly-o cheesecake. Biscuit carrot cake gummi bears danish pie candy canes. Wafer dessert cake. Jelly-o tootsie roll sugar plum jelly beans wafer. Cake toffee tootsie roll. Cookie halvah chocolate jelly beans tootsie roll biscuit. Cotton candy bonbon dessert chupa chups cookie biscuit ice cream candy canes.'
