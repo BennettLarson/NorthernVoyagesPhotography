@@ -1,2 +1,2 @@
 <modal #myModal></modal>
-<img [src]="images[imagesIndex]"  (click)="imageClicked()">
+<img [lazyLoad]="images[imagesIndex]" [scrollTarget]="element[0]" (click)="imageClicked()">

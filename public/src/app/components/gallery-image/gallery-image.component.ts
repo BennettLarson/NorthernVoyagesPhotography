@@ -9,15 +9,14 @@ import { ModalComponent } from 'src/app/components/modal/modal.component';
 export class GalleryImageComponent implements OnInit {
 
   @ViewChild('myModal') private modal: ModalComponent;
-  
   @Input() imagesIndex: number;
-
   @Input() images: string[];
+  public element: any;
   
   constructor() { }
 
   ngOnInit() {
-    console.log('imagesIndex: ' + this.imagesIndex);
+    this.element = document.getElementsByClassName("MainContainer");
   }
 
   public imageClicked() {
