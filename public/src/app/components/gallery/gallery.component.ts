@@ -11,7 +11,6 @@ export class GalleryComponent implements OnInit {
 
   private constants: Constants;
   public currentPage: string;
-  // public cover_image: string;
   public _images: string[];
   public text_col1: string;
   public text_col2: string;
@@ -24,7 +23,6 @@ export class GalleryComponent implements OnInit {
     this.constants = new Constants();
     this.currentPage = this.router.url;
     if (this.currentPage === '/wedding') {
-      // this.cover_image = this.constants.w_cover_image;
       this._images = this.constants.w_images;
       this.text_col1 = this.constants.w_text_col1;
       this.text_col2 = this.constants.w_text_col2;

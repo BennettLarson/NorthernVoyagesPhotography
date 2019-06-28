@@ -9,3 +9,12 @@ img {
 img:hover {
     opacity: 0.5;
 }
+
+img.ng-lazyloaded {
+    animation: fadein .5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
