@@ -1,9 +1,9 @@
-.image-column {
+.imageColumn {
     width: 22em;
     margin-left: 2%;
 }
 
-.text-column {
+.textColumn {
     width: 22em;
     margin-left: 2%;
     text-align: center;
@@ -11,7 +11,7 @@
 }
 
 
-.image-column:nth-child(even) {
+.imageColumn:nth-child(even) {
     margin-top: 5%;
 }
 
@@ -26,14 +26,14 @@
     border-color: darkgrey;
 }
 
-.card-body {
+.cardBody {
     background-color: rgba(0, 0, 0, 0.03);
     border-radius: 0;
     border-color: darkgrey;
     text-align: center;
 }
 
-.card-header {
+.cardHeader {
     color: white;
     background-color: darkgrey;
     text-align: center;
@@ -41,7 +41,7 @@
     border-color: darkgrey;
 }
 
-.card-footer {
+.cardFooter {
     border-radius: 0;
     border-color: darkgrey;
 }
@@ -50,6 +50,10 @@
     justify-content: center;
     padding-bottom: 5%;
     margin-left: -6.6%; // offsets the margin left of content. 
+}
+
+.imageGrid {
+    margin-left: 0px !important;
 }
 
 

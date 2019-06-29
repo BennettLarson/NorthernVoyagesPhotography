@@ -4,19 +4,19 @@
   <div class="ContentContainer">
     <div class="content">
       <div class="row">
-          <div class="text-column">
+          <div class="textColumn">
             <div class="header">column1</div>
             <div class="body">
                 {{text_col1}}
             </div>
           </div>
-          <div class="text-column">
+          <div class="textColumn">
             <div class="header">column2</div>
             <div class="body">
               {{text_col2}}
             </div>
           </div>
-          <div class="text-column">
+          <div class="textColumn">
             <div class="header">column3</div>
             <div class="body">
                 {{text_col3}}
@@ -26,11 +26,11 @@
       <div class="row pricing">
         <div class="column">
           <div class="card">
-            <div class="card-header">Headshots or Team by the hour</div>
-            <div class="card-body">
+            <div class="cardHeader">Headshots or Team by the hour</div>
+            <div class="cardBody">
              $300/hr
             </div> 
-            <div class="card-footer">
+            <div class="cardFooter">
               <ul>
                 <li>item 1</li>
                 <li>item 2</li>
@@ -42,11 +42,11 @@
         </div>
         <div class="column">
           <div class="card">
-            <div class="card-header">Single Session</div>
-            <div class="card-body">
+            <div class="cardHeader">Single Session</div>
+            <div class="cardBody">
               $400
             </div> 
-            <div class="card-footer">
+            <div class="cardFooter">
               <ul>
                 <li>item 1</li>
                 <li>item 2</li>
@@ -57,14 +57,14 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="column image-column">
+      <div class="row imageGrid">
+        <div class="column imageColumn">
           <gallery-image *ngFor="let image of _images | slice:0:5" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
         </div>
-        <div class="column image-column">
+        <div class="column imageColumn">
           <gallery-image *ngFor="let image of _images | slice:5:10" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
         </div>
-        <div class="column image-column">
+        <div class="column imageColumn">
           <gallery-image *ngFor="let image of _images | slice:10:15" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
         </div>
       </div>

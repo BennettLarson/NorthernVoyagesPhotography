@@ -21,3 +21,18 @@ body {
 .margin-top {
     margin-top: 10%;
 }
+
+.modal-backdrop.show {
+    background-color: rgba(211, 211, 211,0.7);
+    opacity: 1.0;
+}
+
+.modal-content {
+    background-color: rgba(211, 211, 211,0);
+    border: 0px;
+}
+
+.modal-dialog {
+    max-width: 100%;
+    margin: 2.8rem auto;
+}
