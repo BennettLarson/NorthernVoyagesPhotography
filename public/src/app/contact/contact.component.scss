@@ -8,12 +8,8 @@
 
 .errorText {
     color: red;
-    position: absolute;
+    // position: absolute;
     
-}
-
-.submitDiv {
-    margin-top: 3%;
 }
 
 select:invalid {
@@ -83,7 +79,6 @@ button {
     margin-top: 3% !important;
 }
 
-
-
-
-
+.container {
+    margin-top: 8%
+}
