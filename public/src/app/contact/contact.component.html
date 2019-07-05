@@ -1,5 +1,5 @@
 <div *ngIf="!successfulSubmission">
-  <form [formGroup]="detailForm" (ngSubmit)="onSubmit()">
+  <form class="myForm" [formGroup]="detailForm" (ngSubmit)="onSubmit()">
     <div class="container">
       <div class="column" [hidden]="validFormSubmitted">
         <div class="row text-center">

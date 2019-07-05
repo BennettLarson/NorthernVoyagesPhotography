@@ -1,11 +1,25 @@
-<nav class="navbar navbar-expand-md mb-4 fixed-top" [ngClass]="{'coloredBackground': currentPage !== '/'}" >
-  <div class="navbar-collapse" >
-      <a class="nav-link" [ngClass]="{'active': currentPage === '/about'}" routerLink="about" (click)="pageSelected('/about')">About</a>
-      <a class="nav-link" [ngClass]="{'active': currentPage === '/wedding'}" routerLink="wedding" (click)="pageSelected('/wedding')">Weddings</a>
-      <a class="nav-link navbar-brand mainLink" [ngClass]="{'active': currentPage === '/'}" routerLink="" (click)="pageSelected('/')">KAYLA  DONNELLE</a>
-      <a class="nav-link" [ngClass]="{'active': currentPage === '/couple'}" routerLink="couple" (click)="pageSelected('/couple')">Couples </a>
-      <a class="nav-link" [ngClass]="{'active': currentPage === '/contact'}" routerLink="contact" (click)="pageSelected('/contact')">Inquire </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'active': currentPage === '/about'}" routerLink="about" (click)="pageSelected('/about')">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'active': currentPage === '/wedding'}" routerLink="wedding" (click)="pageSelected('/wedding')">Weddings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'active': currentPage === '/'}" routerLink="" (click)="pageSelected('/')">KAYLA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'active': currentPage === '/couple'}" routerLink="couple" (click)="pageSelected('/couple')">Couples </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'active': currentPage === '/contact'}" routerLink="contact" (click)="pageSelected('/contact')">Inquire </a>
+      </li>
+    </ul>
   </div>
 </nav>
-
 <router-outlet></router-outlet>

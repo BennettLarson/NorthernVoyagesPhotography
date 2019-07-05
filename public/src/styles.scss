@@ -4,6 +4,7 @@
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
 
+
 // *{
 //     border: 1px solid red;
 // }
@@ -35,4 +36,12 @@ body {
 
 .modal-open .modal {
     overflow-y: hidden;
+}
+
+.MainContainer {
+    margin-top: -5.3%;
+}
+
+html {
+    overflow: hidden;
 }

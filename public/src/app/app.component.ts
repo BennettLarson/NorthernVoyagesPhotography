@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
 
   public currentPage: string;
 
+  @ViewChild('test') private test: any;
   constructor(private router:Router) {}
 
   ngOnInit() {
