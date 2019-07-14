@@ -6,7 +6,7 @@
     position: absolute;
     margin-left: 48.5%;
     color: white;
-    margin-top: 45.6%;
+    // margin-top: 14.3em;
     text-shadow: 0 0 3px #000;
     font-size: 2.5em !important;
     cursor: pointer;
@@ -14,7 +14,7 @@
 
 .fa-chevron-left {
     position: absolute;
-    margin-top: 46%;
+    // margin-top: 18em;
     margin-left: 42%;
     color: white;
     text-shadow: 0 0 3px #000;
@@ -23,7 +23,7 @@
 
 .fa-chevron-right {
     position: absolute;
-    margin-top: 46%;
+    // margin-top: 18em;
     margin-left: 55.3%;
     text-shadow: 0 0 3px #000;
     color: white;
@@ -38,8 +38,111 @@
     opacity: 0.5;
 }
 
-.modal-content, .actualImg {
-    height: 39em;
-    object-fit: contain;
+@media(min-width: 1024px) {
+    .modal-content, .actualImg {
+        height: 37em;
+        object-fit: contain;
+    }
+    .fa-times {
+        margin-top: 13.4em;
+    }
+    .fa-chevron-left, .fa-chevron-right {
+        margin-top: 17em;
+    }
 }
 
+@media(min-width: 1440px) {
+    .modal-content, .actualImg {
+        height: 43em;
+        object-fit: contain;
+    }
+    .fa-times {
+        margin-top: 15.7em;
+    }
+    .fa-chevron-left, .fa-chevron-right {
+        margin-top: 19.8em;
+    }
+}
+
+@media(min-width: 1680px) {
+    .modal-content, .actualImg {
+        height: 50em;
+        object-fit: contain;
+    }
+    .fa-times {
+        margin-top: 18.3em
+    }
+    .fa-chevron-left, .fa-chevron-right {
+        margin-top: 23em
+    }
+}
+
+@media(min-width: 2560px) {
+    .modal-content, .actualImg {
+        height: 75em;
+        object-fit: contain;
+    }
+    .fa-times {
+        margin-top: 28.7em
+    }
+    .fa-chevron-left, .fa-chevron-right {
+        margin-top: 36em;
+    }
+}
+
+// @media(max-width: 1279px) {
+    // .fa-times {
+    //     margin-top: 55.6%;
+    // }
+    // .fa-chevron-left, .fa-chevron-right {
+    //     margin-top: 56%
+    // }
+// }
+
+// @media(max-width: 1279px) {
+//     .modal-content, .actualImg {
+//         height: 39em;
+//         object-fit: contain;
+//     }
+// }
+
+// @media(max-width: 1279px) {
+//     .fa-times {
+//         margin-top: 43.6%;
+//     }
+//     .fa-chevron-left, .fa-chevron-right {
+//         margin-top: 44%
+//     }
+// }
+
+// @media(min-width: 1025px) {
+//     .modal-content, .actualImg {
+//         height: 39em;
+//         object-fit: contain;
+//     }
+// }
+
+// @media(min-width: 1025px) {
+//     .fa-times {
+//         margin-top: 43.6%;
+//     }
+//     .fa-chevron-left, .fa-chevron-right {
+//         margin-top: 44%
+//     }
+// }
+
+// @media(min-width: 1025px) {
+//     .modal-content, .actualImg {
+//         height: 39em;
+//         object-fit: contain;
+//     }
+// }
+
+// @media(min-width: 1025px) {
+//     .fa-times {
+//         margin-top: 43.6%;
+//     }
+//     .fa-chevron-left, .fa-chevron-right {
+//         margin-top: 44%
+//     }
+// }
