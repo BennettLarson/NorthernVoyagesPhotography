@@ -1,7 +1,36 @@
-.imageColumn {
-    width: 22em;
-    margin-left: 2%;
-}
+// @media(min-width: 1024px) {
+    .imageGrid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -3.5%;
+    }
+    
+    .imageColumn:nth-child(1) {
+        // width: 22em;
+        // margin-left: 2%;
+        flex: 33%;
+        max-width: 33%;
+    }
+    .imageColumn:nth-child(2) {
+        // width: 22em;
+        // margin-left: 2%;
+        flex: 33%;
+        max-width: 33%;
+        padding-left: 1.3%;
+        // padding: 0 2%;
+    }
+    .imageColumn:nth-child(3) {
+        // width: 22em;
+        // margin-left: 2%;
+        flex: 33%;
+        max-width: 33%;
+        padding-left: 1.3%;
+        // padding: 0 2%;
+    }
+// }
+
+// @media(max-width: 800) 
+
 
 .textColumn {
     width: 22em;
@@ -14,6 +43,7 @@
 .imageColumn:nth-child(even) {
     margin-top: 5%;
 }
+
 
 .content {
     margin-left: 4.6%; // helps center things
@@ -52,9 +82,6 @@
     margin-left: -6.6%; // offsets the margin left of content. 
 }
 
-.imageGrid {
-    margin-left: 0px !important;
-}
 
 
 .MainContainer {
