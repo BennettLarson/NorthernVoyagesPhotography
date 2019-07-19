@@ -7,6 +7,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mysql": "^2.16.0",
+    "n": "^4.1.0",
     "ngx-bootstrap": "^3.0.1",
     "nodemailer": "^4.6.8",
     "serve-index": "^1.9.1"
@@ -21,6 +22,6 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "10.12.0"
+    "node": "10.10.0"
   }
 }
