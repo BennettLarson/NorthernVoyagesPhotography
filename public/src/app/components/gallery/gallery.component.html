@@ -1,9 +1,13 @@
 <div class="MainContainer">
-  <div [ngClass]="currentPage === '/wedding' ? 'WeddingParallaxContainer' : 'CoupleParallaxContainer'">
+  <div class="ParallaxContainer" 
+      [ngClass]="currentPage === '/wedding' ? 'WeddingContainer' : 
+                currentPage === '/elopement' ? 'ElopementContainer' :
+                currentPage === '/couple1' ? 'Couple1Container' : 
+                currentPage === '/couple2' ? 'Couple2Container' : '' ">
   </div>
   <div class="ContentContainer">
     <div class="content">
-      <div class="row">
+      <!-- <div class="row">
           <div class="textColumn">
             <div class="header">column1</div>
             <div class="body">
@@ -56,16 +60,16 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="row imageGrid">
         <div class="column imageColumn">
-          <gallery-image *ngFor="let image of _images | slice:0:5" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+          <gallery-image *ngFor="let image of _images | slice:0:numImages/3" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
         </div>
         <div class="column imageColumn">
-          <gallery-image *ngFor="let image of _images | slice:5:10" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+          <gallery-image *ngFor="let image of _images | slice:numImages/3:numImages*(2/3)" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
         </div>
         <div class="column imageColumn">
-          <gallery-image *ngFor="let image of _images | slice:10:15" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
+          <gallery-image *ngFor="let image of _images | slice:numImages*(2/3):numImages" [images]="_images" [imagesIndex]="_images.indexOf(image)" ></gallery-image>
         </div>
       </div>
     </div>

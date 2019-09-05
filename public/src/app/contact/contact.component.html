@@ -2,38 +2,40 @@
   <form class="myForm" [formGroup]="detailForm" (ngSubmit)="onSubmit()">
     <div class="container">
       <div class="column" [hidden]="validFormSubmitted">
-        <div class="row text-center">
-          <input placeholder="Name" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.name.status === 'INVALID'}" type="text" formControlName="name" required>
+        <div class="row text-center nameRow">
+          <label for="name" class="mainLabel">Your Name</label>
+          <input name="name" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.name.status === 'INVALID'}" type="text" formControlName="name" required>
         </div>
-        <div class="row text-center">
-          <input placeholder="Email" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.email.status === 'INVALID'}" type="text" formControlName="email" required>
+        <div class="row text-center emailRow">
+            <label for="email" class="mainLabel">Your Email</label>
+          <input name="email" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.email.status === 'INVALID'}" type="text" formControlName="email" required>
         </div>
-        <div class="row text-center">
+        <div class="row text-center serviceRow">
+          <label for="service" class="mainLabel">Event Type</label>
           <select formControlName="service" required [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.service.status === 'INVALID'}" >
-            <option disabled selected value>Requested Service</option>
-            <option>Wedding Photography</option>
+            <option selected>Wedding Photography</option>
             <option>Couple Photography</option>
             <option>Other</option>
           </select>
         </div>
-        <div class="row text-center">
+        <!-- <div class="row text-center">
           <input placeholder="Phone" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.phone.status === 'INVALID'}" type="text" formControlName="phone" required>
+        </div> -->
+        <div class="row text-center eventDateRow">
+            <label for="eventDate" class="mainLabel">Event Date</label>
+          <input name="eventDate" type="text" onfocus="(this.type='date')" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.date.status === 'INVALID'}" formControlName="date" required>
         </div>
-        <div class="row text-center">
-          <input placeholder="Event Date" type="text" onfocus="(this.type='date')" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.date.status === 'INVALID'}" formControlName="date" required>
-        </div>
-        <div class="row text-center">
-          <textarea placeholder="Tell me more about yourself! What ideas do you have? Send me your availability, and let's get started!" class = "textArea" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.additionalInfo.status === 'INVALID'}" type="text" formControlName="additionalInfo" required>
+        <div class="row moreInfoRow">
+          <label for="moreInfo" class="textareaLabel">Tell me more about your event</label>
+          <textarea name="moreInfo" class = "textArea" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.additionalInfo.status === 'INVALID'}" type="text" formControlName="additionalInfo" required>
           </textarea>
         </div>
         <div class="row submitDiv text-center">
-          <p class="errorText" ngClass="{invalidFormSubmitted ? 'show' : 'dontShow' ">
-            {{invalidFormSubmitted ? 'Please fill out the highlighted fields.' : ''}}
+          <p class="errorText" [ngStyle]="{'visibility': invalidFormSubmitted ? 'visible' : 'hidden' }">
+            Please fill out the highlighted fields.
           </p>
           <button class="submitBtn" type="submit" >{{submitted ? 'Submitting...': 'Submit'}} </button>
-          <span>
-            <img [hidden]="!submitted" class="catGif" src="https://northernvoyages.blob.core.windows.net/northern-voyages-images/catGifGreyRotated.gif"/>
-          </span>
+          <img [ngStyle]="{'visibility': submitted ? 'visible' : 'hidden' }" class="catGif" src="../../assets/catLoad.gif"/>
         </div>
       </div>
     </div>

@@ -11,8 +11,8 @@ export class ContactComponent {
   public detailForm: FormGroup = this.fb.group({
     name: ['', Validators.required],
     email: ['', Validators.compose([Validators.email,Validators.required])],
-    phone: ['', Validators.required],
-    service: ['', Validators.required],
+    // phone: ['', Validators.required],
+    service: ['Wedding Photography', Validators.required],
     date: ['', Validators.required],
     additionalInfo: ['', Validators.required]
   })

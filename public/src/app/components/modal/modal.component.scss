@@ -8,14 +8,13 @@
     color: white;
     // margin-top: 14.3em;
     text-shadow: 0 0 3px #000;
-    font-size: 2.5em !important;
     cursor: pointer;
 }
 
 .fa-chevron-left {
     position: absolute;
     // margin-top: 18em;
-    margin-left: 42%;
+    margin-left: 5vw;
     color: white;
     text-shadow: 0 0 3px #000;
     cursor: pointer;
@@ -24,7 +23,7 @@
 .fa-chevron-right {
     position: absolute;
     // margin-top: 18em;
-    margin-left: 55.3%;
+    margin-left: 90vw;
     text-shadow: 0 0 3px #000;
     color: white;
     cursor: pointer;
@@ -38,57 +37,86 @@
     opacity: 0.5;
 }
 
-@media(min-width: 1024px) {
+
+@media(min-width: 320px) {
     .modal-content, .actualImg {
-        height: 37em;
+        height: 75vh;
         object-fit: contain;
     }
+    .fa-chevron-left, .fa-chevron-right {
+        position:absolute;
+        top:85vh;
+        transform:translateY(-100%);
+        width:10%;
+        font-size: 2em !important;
+    }
+
     .fa-times {
-        margin-top: 13.4em;
+        position:absolute;
+        top:85vh;
+        transform:translateY(-100%);
+        width:10%;
+        font-size: 2.5em !important;
+    }
+  
+}
+
+@media(min-width: 768px) {
+    .fa-times {
+        font-size: 3.4em !important;
     }
     .fa-chevron-left, .fa-chevron-right {
-        margin-top: 17em;
+        font-size: 2.8em !important;
     }
 }
 
-@media(min-width: 1440px) {
-    .modal-content, .actualImg {
-        height: 43em;
-        object-fit: contain;
-    }
+@media(min-width: 1920px) {
     .fa-times {
-        margin-top: 15.7em;
+        font-size: 4.4em !important;
     }
     .fa-chevron-left, .fa-chevron-right {
-        margin-top: 19.8em;
+        font-size: 3.5em !important;
     }
 }
 
-@media(min-width: 1680px) {
-    .modal-content, .actualImg {
-        height: 50em;
-        object-fit: contain;
-    }
-    .fa-times {
-        margin-top: 18.3em
-    }
-    .fa-chevron-left, .fa-chevron-right {
-        margin-top: 23em
-    }
-}
+// @media(min-width: 1440px) {
+//     .modal-content, .actualImg {
+//         height: 43em;
+//         object-fit: contain;
+//     }
+//     .fa-times {
+//         margin-top: 15.7em;
+//     }
+//     .fa-chevron-left, .fa-chevron-right {
+//         margin-top: 19.8em;
+//     }
+// }
 
-@media(min-width: 2560px) {
-    .modal-content, .actualImg {
-        height: 75em;
-        object-fit: contain;
-    }
-    .fa-times {
-        margin-top: 28.7em
-    }
-    .fa-chevron-left, .fa-chevron-right {
-        margin-top: 36em;
-    }
-}
+// @media(min-width: 1680px) {
+//     .modal-content, .actualImg {
+//         height: 50em;
+//         object-fit: contain;
+//     }
+//     .fa-times {
+//         margin-top: 18.3em
+//     }
+//     .fa-chevron-left, .fa-chevron-right {
+//         margin-top: 23em
+//     }
+// }
+
+// @media(min-width: 2560px) {
+//     .modal-content, .actualImg {
+//         height: 75em;
+//         object-fit: contain;
+//     }
+//     .fa-times {
+//         margin-top: 28.7em
+//     }
+//     .fa-chevron-left, .fa-chevron-right {
+//         margin-top: 36em;
+//     }
+// }
 
 // @media(max-width: 1279px) {
     // .fa-times {

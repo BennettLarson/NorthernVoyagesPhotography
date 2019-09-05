@@ -30,6 +30,7 @@ export class ModalComponent {
   }
 
   public forwardButtonClicked() {
+    console.log('forward');
     if (this.currentIndex + this.images.length/3 < this.images.length) { // not at the end of a row
       this.currentIndex = this.currentIndex + this.images.length/3;
     } else if (this.currentIndex === this.images.length - 1 ) { // at the end of the final row
@@ -40,6 +41,8 @@ export class ModalComponent {
   }
 
   public backButtonClicked() {
+
+    console.log("back");
     if (this.currentIndex - this.images.length/3 > -1) { // not at the beginning of a row
       this.currentIndex = this.currentIndex - this.images.length/3;
     } else if (this.row === 0)  { // at the beginning of the first row
@@ -52,7 +55,9 @@ export class ModalComponent {
   @HostListener('document:keydown', ['$event']) keydown(event: KeyboardEvent){
     if(event.keyCode === 39) { //left arrow clicked
       this.forwardButtonClicked();
+
     } else if(event.keyCode === 37) { //right arrow clicked
+      
       this.backButtonClicked();
     }
   }

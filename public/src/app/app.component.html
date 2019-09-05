@@ -1,24 +1,50 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md" [ngClass]="currentPage === '/' ? 'navbar-dark' : 'navbar-light'" >
+    <a class="navbar-brand" href="#">
+        <img [src]="currentPage === '/' ? '../assets/logoInverse.png' : '../assets/logo.png'" alt="">
+      </a>
+  <button #toggler class="navbar-toggler" (click)="collapse = ! collapse" type="button" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <div class="collapse navbar-collapse" [ngClass]="!collapse ? 'show' : ''" >
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" [ngClass]="{'active': currentPage === '/about'}" routerLink="about" (click)="pageSelected('/about')">About</a>
+        <a class="nav-link" routerLink="about" 
+            
+            [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" [ngClass]="{'active': currentPage === '/wedding'}" routerLink="wedding" (click)="pageSelected('/wedding')">Weddings</a>
+      <li class="nav-item dropdown show" (mouseenter)="showWeddingDropdown = true" (mouseleave)="showWeddingDropdown = false">
+        <a href="#" class="nav-link dropdown-toggle" 
+            data-toggle="dropdown"
+            id="weddingDropdownLink"
+            [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Weddings</a>
+        <div class="dropdown-menu" aria-labelledby="weddingDropdownLink" [ngClass]="{'show': showWeddingDropdown, 'homeMenu': currentPage === '/'}">
+          <a class="nav-link dropdown-item"  routerLink="wedding" 
+              [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showWeddingDropdown = false">Weddings</a>
+          <a class="nav-link dropdown-item"  routerLink="elopement"
+               
+               [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showWeddingDropdown = false">Elopements</a>
+        </div>
+    </li>
+      <li class="nav-item logo">
+        <a class="nav-link" routerLink="" ><img [src]="currentPage === '/' ? '../assets/logoInverse.png' : '../assets/logo.png'"/></a>
       </li>
+      <li class="nav-item dropdown show" (mouseenter)="showCoupleDropdown = true" (mouseleave)="showCoupleDropdown = false">
+        <a href="#" class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            id="coupleDropdownLink"
+            [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Couples</a>
+        <div class="dropdown-menu" aria-labelledby="coupleDropdownLink" [ngClass]="{'show': showCoupleDropdown, 'homeMenu': currentPage === '/'}">
+        <!-- [ngClass]="currentPage === '/' ? 'homeMenu' : ''"> -->
+          <a class="nav-link dropdown-item"  routerLink="couple1" 
+              [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showCoupleDropdown = false">Couple1</a>
+          <a class="nav-link dropdown-item"  routerLink="couple2"
+              [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showCoupleDropdown = false">Couple2</a>
+        </div>
+    </li>
       <li class="nav-item">
-        <!-- <img src="../assets/images/logo.jpg"> -->
-        <a class="nav-link" [ngClass]="{'active': currentPage === '/'}" routerLink="" (click)="pageSelected('/')">KAYLA</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [ngClass]="{'active': currentPage === '/couple'}" routerLink="couple" (click)="pageSelected('/couple')">Couples </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [ngClass]="{'active': currentPage === '/contact'}" routerLink="contact" (click)="pageSelected('/contact')">Inquire </a>
+        <a class="nav-link" routerLink="contact" 
+            
+            [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Inquire </a>
       </li>
     </ul>
   </div>

@@ -10,7 +10,8 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
 // }
 
 body {
-    background-color:rgb(216, 216, 216);
+    // background-color:rgb(216, 216, 216);
+    background-color: #FFFFFF;
 }
 
 .carousel-indicators { visibility: hidden; }
@@ -20,8 +21,8 @@ body {
 }
 
 .modal-backdrop.show {
-    background-color: rgba(211, 211, 211,0.7);
-    opacity: 1.0;
+    background-color: black;
+    opacity: 0.95;
 }
 
 .modal-content {
@@ -38,10 +39,15 @@ body {
     overflow-y: hidden;
 }
 
-.MainContainer {
-    margin-top: -5.3%;
-}
+// .MainContainer {
+//     margin-top: -5.3%;
+// }
 
+@media (min-width: 1024px) {
+    html {
+        overflow-y: hidden;
+    } 
+}
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }

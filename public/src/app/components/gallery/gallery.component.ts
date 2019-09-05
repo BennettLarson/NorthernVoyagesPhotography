@@ -12,9 +12,7 @@ export class GalleryComponent implements OnInit {
   private constants: Constants;
   public currentPage: string;
   public _images: string[];
-  public text_col1: string;
-  public text_col2: string;
-  public text_col3: string;
+  public numImages: number;
   
   constructor(private router:Router) { 
    }
@@ -22,16 +20,21 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
     this.constants = new Constants();
     this.currentPage = this.router.url;
-    if (this.currentPage === '/wedding') {
-      this._images = this.constants.w_images;
-      this.text_col1 = this.constants.w_text_col1;
-      this.text_col2 = this.constants.w_text_col2;
-      this.text_col3 = this.constants.w_text_col3;
-    } else if (this.currentPage === '/couple') {
-      this._images = this.constants.c_images;
-      this.text_col1 = this.constants.c_text_col1;
-      this.text_col2 = this.constants.c_text_col2;
-      this.text_col3 = this.constants.c_text_col3;
+    switch (this.currentPage) {
+      case "/wedding":
+        this._images = this.constants.w_images;
+        break;
+      case "/elopement":
+        this._images = this.constants.e_images;
+        break;
+      case "/couple1":
+        this._images = this.constants.c1_images;
+        break;
+      case "/couple2":
+        this._images = this.constants.c2_images;
+        break;
     }
+    
+    this.numImages = this._images.length;
   }
 }

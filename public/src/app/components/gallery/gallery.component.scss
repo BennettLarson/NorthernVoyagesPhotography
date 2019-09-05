@@ -2,7 +2,9 @@
     .imageGrid {
         display: flex;
         flex-wrap: wrap;
+        padding-top: 5%;
         margin-left: -3.5%;
+        margin-right: 0.3%;
     }
     
     .imageColumn:nth-child(1) {
@@ -99,7 +101,7 @@
     z-index: 1;
 }
 
-.WeddingParallaxContainer {
+.ParallaxContainer {
     width: 100vw;
     display: flex;
     flex: 1 0 auto;
@@ -109,25 +111,30 @@
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
+}
+.WeddingContainer {
     background: url("https://northernvoyages.blob.core.windows.net/northern-voyages-images/_DSC8546-3-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-  }
+}
 
-  .CoupleParallaxContainer {
-    width: 100vw;
-    display: flex;
-    flex: 1 0 auto;
-    position: relative;
-    z-index: -1;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    transform: translateZ(-1px) scale(2);
+.ElopementContainer {
     background: url("https://northernvoyages.blob.core.windows.net/northern-voyages-images/_DSC8535-2-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-  }
+}
+
+.Couple1Container {
+    background: url( "https://northernvoyages.blob.core.windows.net/northern-voyages-images/compressedImg3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Couple2Container {
+    background: url( "https://northernvoyages.blob.core.windows.net/northern-voyages-images/compressedImg2.jpg",) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
   .body {
       padding: 0em 1.5em;
