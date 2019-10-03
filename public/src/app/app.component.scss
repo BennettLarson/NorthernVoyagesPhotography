@@ -112,6 +112,11 @@
     font-size: 1vw;
 }
 
+.dropdown-toggle:focus {
+    border: 0px;
+    outline: 0px;
+}
+
 img {
     width: 100%;
 }
