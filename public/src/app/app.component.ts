@@ -10,11 +10,14 @@ export class AppComponent implements OnInit{
   title = 'public';
 
   public currentPage: string;
-  public showWeddingDropdown: boolean = false;
-  public showCoupleDropdown: boolean = false;
-  public collapse: boolean = true;
+  public showWeddingDropdown: boolean;
+  public showCoupleDropdown: boolean;
+  public collapse: boolean;
 
   constructor(private router:Router) {
+    this.showWeddingDropdown = false;
+    this.showCoupleDropdown = false;
+    this.collapse = true;
     this.router.events.subscribe(event => { 
       if (event instanceof NavigationEnd) {
         this.collapse = true;
@@ -25,13 +28,5 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
     this.currentPage = this.router.url;
-  }
-
-  public setShowWedding() {
-    this.showWeddingDropdown = !this.showWeddingDropdown;
-  }
-
-  public setShowCouple() {
-    this.showCoupleDropdown = !this.showCoupleDropdown;
   }
 }
