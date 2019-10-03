@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +12,11 @@ export class AppComponent implements OnInit{
   public currentPage: string;
   public showWeddingDropdown: boolean = false;
   public showCoupleDropdown: boolean = false;
-
   public collapse: boolean = true;
 
   constructor(private router:Router) {
     this.router.events.subscribe(event => { 
-      if (event.constructor.name === "NavigationStart" || event.constructor.name === "ActivationEnd" ) {
+      if (event instanceof NavigationEnd) {
         this.collapse = true;
         this.currentPage = this.router.url;
       }
@@ -25,7 +24,6 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit() {
-    console.log("INIT");
     this.currentPage = this.router.url;
   }
 }

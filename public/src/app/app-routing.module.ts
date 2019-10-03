@@ -24,6 +24,10 @@ const routes: Routes = [
     component: GalleryComponent
   },
   {
+    path: 'couple1',
+    component: GalleryComponent
+  },
+  {
     path: 'couple2',
     component: GalleryComponent
 
