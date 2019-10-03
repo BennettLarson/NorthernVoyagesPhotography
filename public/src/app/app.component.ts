@@ -26,4 +26,12 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.currentPage = this.router.url;
   }
+
+  public setShowWedding() {
+    this.showWeddingDropdown = !this.showWeddingDropdown;
+  }
+
+  public setShowCouple() {
+    this.showCoupleDropdown = !this.showCoupleDropdown;
+  }
 }
