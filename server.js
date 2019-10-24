@@ -26,7 +26,7 @@ const nodeMailer = require('nodemailer');
 //     });
 // });
 // -------------------------------------------------------------------------
-const port = process.env.port || 3000;
+const port = 8080;
 console.log("hello world");
 app.use(express.static(path.join(__dirname, '/public/dist/public')));
 app.use(bodyParser.json());
