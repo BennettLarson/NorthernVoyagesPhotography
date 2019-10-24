@@ -19,6 +19,6 @@ export class ContactService {
 
   sendEmail(newInquiry: NewInquiry){
     console.log('send email!');
-    return this.http.post('http://localhost:3000/api/sendEmail', newInquiry, {observe: 'response'});
+    return this.http.post('https://northern-voyages.azurewebsites.net/api/sendEmail', newInquiry, {observe: 'response'});
   }
 }
