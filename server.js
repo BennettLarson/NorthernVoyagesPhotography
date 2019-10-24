@@ -26,7 +26,7 @@ const nodeMailer = require('nodemailer');
 //     });
 // });
 // -------------------------------------------------------------------------
-const port = process.env.port;
+const port = 3000 || process.env.port;
 console.log("hello world");
 app.use(express.static(path.join(__dirname, '/public/dist/public')));
 app.use(bodyParser.json());
@@ -77,4 +77,4 @@ app.get('*', (req,res) => {
     fs.createReadStream(__dirname + '/public/dist/public/index.html').pipe(res);
 })
 
-app.listen(port, () => console.log('Gator app listening on port 3000!'));
+app.listen(port, () => console.log('Gator app listening on port: ' + port));
