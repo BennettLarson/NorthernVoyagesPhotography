@@ -27,10 +27,10 @@ export class GalleryComponent implements OnInit {
       case "/elopement":
         this._images = this.constants.e_images;
         break;
-      case "/couple1":
+      case "/family":
         this._images = this.constants.c1_images;
         break;
-      case "/couple2":
+      case "/couple":
         this._images = this.constants.c2_images;
         break;
     }

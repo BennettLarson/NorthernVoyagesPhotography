@@ -27,16 +27,16 @@
       <li class="nav-item logo">
         <a class="nav-link" routerLink="" ><img [src]="currentPage === '/' ? '../assets/logoInverse.png' : '../assets/logo.png'"/></a>
       </li>
-      <li class="nav-item dropdown" (mouseenter)="showCoupleDropdown = true" (mouseleave)="showCoupleDropdown = false">
+      <li class="nav-item dropdown" (mouseenter)="showPortraitDropdown = true" (mouseleave)="showPortraitDropdown = false">
         <a href="#" class="nav-link dropdown-toggle"
             data-toggle="dropdown"
-            id="coupleDropdownLink"
-            [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Couples</a>
-        <div class="dropdown-menu" aria-labelledby="coupleDropdownLink" [ngClass]="{'showDropdown': showCoupleDropdown, 'homeMenu': currentPage === '/'}">
-          <a class="nav-link dropdown-item"  routerLink="couple1" 
-              [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showCoupleDropdown = false">Couple1</a>
-          <a class="nav-link dropdown-item"  routerLink="couple2"
-              [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showCoupleDropdown = false">Couple2</a>
+            id="portraitDropdownLink"
+            [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Portraits</a>
+        <div class="dropdown-menu" aria-labelledby="portraitDropdownLink" [ngClass]="{'showDropdown': showPortraitDropdown, 'homeMenu': currentPage === '/'}">
+          <a class="nav-link dropdown-item"  routerLink="couple" 
+              [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showPortraitDropdown = false">Couples</a>
+          <a class="nav-link dropdown-item"  routerLink="family"
+              [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showPortraitDropdown = false">Family</a>
         </div>
     </li>
       <li class="nav-item">

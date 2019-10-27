@@ -18,9 +18,6 @@
             <option>Other</option>
           </select>
         </div>
-        <!-- <div class="row text-center">
-          <input placeholder="Phone" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.phone.status === 'INVALID'}" type="text" formControlName="phone" required>
-        </div> -->
         <div class="row text-center eventDateRow">
             <label for="eventDate" class="mainLabel">Event Date</label>
           <input name="eventDate" type="text" onfocus="(this.type='date')" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.date.status === 'INVALID'}" formControlName="date" required>

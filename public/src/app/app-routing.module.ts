@@ -11,26 +11,20 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
+    path: 'wedding',
+    component: GalleryComponent
+  },
+  {
     path: 'elopement',
     component: GalleryComponent
   },
   {
-    path: 'wedding',
-    component: GalleryComponent
-
-  },
-  {
-    path: 'couple1',
+    path: 'couple',
     component: GalleryComponent
   },
   {
-    path: 'couple1',
+    path: 'family',
     component: GalleryComponent
-  },
-  {
-    path: 'couple2',
-    component: GalleryComponent
-
   },
   {
     path: 'contact',

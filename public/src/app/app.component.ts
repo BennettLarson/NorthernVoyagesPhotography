@@ -11,12 +11,12 @@ export class AppComponent implements OnInit{
 
   public currentPage: string;
   public showWeddingDropdown: boolean;
-  public showCoupleDropdown: boolean;
+  public showPortraitDropdown: boolean;
   public collapse: boolean;
 
   constructor(private router:Router) {
     this.showWeddingDropdown = false;
-    this.showCoupleDropdown = false;
+    this.showPortraitDropdown = false;
     this.collapse = true;
     this.router.events.subscribe(event => { 
       if (event instanceof NavigationEnd) {
