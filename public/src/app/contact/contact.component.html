@@ -1,7 +1,7 @@
-<div *ngIf="!successfulSubmission">
+<div>
   <form class="myForm" [formGroup]="detailForm" (ngSubmit)="onSubmit()">
     <div class="container">
-      <div class="column" [hidden]="validFormSubmitted">
+      <div class="column">
         <div class="row text-center nameRow">
           <label for="name" class="mainLabel">Your Name</label>
           <input name="name" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.name.status === 'INVALID'}" type="text" formControlName="name" required>
@@ -31,16 +31,13 @@
           <p class="errorText" [ngStyle]="{'visibility': invalidFormSubmitted ? 'visible' : 'hidden' }">
             Please fill out the highlighted fields.
           </p>
-          <button class="submitBtn" type="submit" >{{submitted ? 'Submitting...': 'Submit'}} </button>
-          <img [ngStyle]="{'visibility': submitted ? 'visible' : 'hidden' }" class="catGif" src="../../assets/catLoad.gif"/>
+          <button class="submitBtn" type="submit" >{{submitted ? successfulSubmission ? 'Success!' : 'Submitting...': 'Submit'}} </button>
+          <img [ngStyle]="{'visibility': submitted ? successfulSubmission ? 'hidden' : 'visible' : 'hidden'}" class="catGif" src="../../assets/catLoad.gif"/>
+          <p class="successMessage" [ngStyle]="{'visibility': successfulSubmission ? 'visible' : 'hidden'}" > Thanks for reaching out! You will receive an email soon with more details :)</p>
         </div>
       </div>
     </div>
   </form>
 </div>
 
-<div *ngIf="successfulSubmission">
-  <div class="container">
-      <p> success! </p>
-  </div>
-</div>
+<!--submission? successful submission?-->
