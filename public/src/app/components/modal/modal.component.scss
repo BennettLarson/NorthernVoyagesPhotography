@@ -3,8 +3,8 @@
 }
 
 .fa-times {
-    position: absolute;
-    margin-left: 48.5%;
+    // position: absolute;
+    margin-left: 45vw;
     color: white;
     // margin-top: 14.3em;
     text-shadow: 0 0 3px #000;
@@ -12,7 +12,7 @@
 }
 
 .fa-chevron-left {
-    position: absolute;
+    // position: absolute;
     // margin-top: 18em;
     margin-left: 5vw;
     color: white;
@@ -47,7 +47,7 @@
         position:absolute;
         top:85vh;
         transform:translateY(-100%);
-        width:10%;
+        width:4vh;
         font-size: 2em !important;
     }
 
@@ -55,7 +55,7 @@
         position:absolute;
         top:85vh;
         transform:translateY(-100%);
-        width:10%;
+        width:5vh;
         font-size: 2.5em !important;
     }
   
@@ -78,99 +78,3 @@
         font-size: 3.5em !important;
     }
 }
-
-// @media(min-width: 1440px) {
-//     .modal-content, .actualImg {
-//         height: 43em;
-//         object-fit: contain;
-//     }
-//     .fa-times {
-//         margin-top: 15.7em;
-//     }
-//     .fa-chevron-left, .fa-chevron-right {
-//         margin-top: 19.8em;
-//     }
-// }
-
-// @media(min-width: 1680px) {
-//     .modal-content, .actualImg {
-//         height: 50em;
-//         object-fit: contain;
-//     }
-//     .fa-times {
-//         margin-top: 18.3em
-//     }
-//     .fa-chevron-left, .fa-chevron-right {
-//         margin-top: 23em
-//     }
-// }
-
-// @media(min-width: 2560px) {
-//     .modal-content, .actualImg {
-//         height: 75em;
-//         object-fit: contain;
-//     }
-//     .fa-times {
-//         margin-top: 28.7em
-//     }
-//     .fa-chevron-left, .fa-chevron-right {
-//         margin-top: 36em;
-//     }
-// }
-
-// @media(max-width: 1279px) {
-    // .fa-times {
-    //     margin-top: 55.6%;
-    // }
-    // .fa-chevron-left, .fa-chevron-right {
-    //     margin-top: 56%
-    // }
-// }
-
-// @media(max-width: 1279px) {
-//     .modal-content, .actualImg {
-//         height: 39em;
-//         object-fit: contain;
-//     }
-// }
-
-// @media(max-width: 1279px) {
-//     .fa-times {
-//         margin-top: 43.6%;
-//     }
-//     .fa-chevron-left, .fa-chevron-right {
-//         margin-top: 44%
-//     }
-// }
-
-// @media(min-width: 1025px) {
-//     .modal-content, .actualImg {
-//         height: 39em;
-//         object-fit: contain;
-//     }
-// }
-
-// @media(min-width: 1025px) {
-//     .fa-times {
-//         margin-top: 43.6%;
-//     }
-//     .fa-chevron-left, .fa-chevron-right {
-//         margin-top: 44%
-//     }
-// }
-
-// @media(min-width: 1025px) {
-//     .modal-content, .actualImg {
-//         height: 39em;
-//         object-fit: contain;
-//     }
-// }
-
-// @media(min-width: 1025px) {
-//     .fa-times {
-//         margin-top: 43.6%;
-//     }
-//     .fa-chevron-left, .fa-chevron-right {
-//         margin-top: 44%
-//     }
-// }
