@@ -2,15 +2,15 @@
   <form class="myForm" [formGroup]="detailForm" (ngSubmit)="onSubmit()">
     <div class="container">
       <div class="column">
-        <div class="row text-center nameRow">
+        <div class="row text-center nameRow" [ngClass]="{'fieldDisabled' : successfulSubmission}">
           <label for="name" class="mainLabel">Your Name</label>
           <input name="name" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.name.status === 'INVALID'}" type="text" formControlName="name" required>
         </div>
-        <div class="row text-center emailRow">
+        <div class="row text-center emailRow" [ngClass]="{'fieldDisabled' : successfulSubmission}">
             <label for="email" class="mainLabel">Your Email</label>
           <input name="email" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.email.status === 'INVALID'}" type="text" formControlName="email" required>
         </div>
-        <div class="row text-center serviceRow">
+        <div class="row text-center serviceRow " [ngClass]="{'fieldDisabled' : successfulSubmission}">
           <label for="service" class="mainLabel">Event Type</label>
           <select formControlName="service" required [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.service.status === 'INVALID'}" >
             <option selected>Wedding Photography</option>
@@ -18,26 +18,24 @@
             <option>Other</option>
           </select>
         </div>
-        <div class="row text-center eventDateRow">
+        <div class="row text-center eventDateRow" [ngClass]="{'fieldDisabled' : successfulSubmission}">
             <label for="eventDate" class="mainLabel">Event Date</label>
           <input name="eventDate" type="text" onfocus="(this.type='date')" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.date.status === 'INVALID'}" formControlName="date" required>
         </div>
-        <div class="row moreInfoRow">
+        <div class="row moreInfoRow" [ngClass]="{'fieldDisabled' : successfulSubmission}">
           <label for="moreInfo" class="textareaLabel">Tell me more about your event</label>
           <textarea name="moreInfo" class = "textArea" [ngClass] ="{'error': invalidFormSubmitted && detailForm.controls.additionalInfo.status === 'INVALID'}" type="text" formControlName="additionalInfo" required>
           </textarea>
         </div>
         <div class="row submitDiv text-center">
-          <p class="errorText" [ngStyle]="{'visibility': invalidFormSubmitted ? 'visible' : 'hidden' }">
+          <p class="errorText" *ngIf="invalidFormSubmitted">
             Please fill out the highlighted fields.
           </p>
-          <button class="submitBtn" type="submit" >{{submitted ? successfulSubmission ? 'Success!' : 'Submitting...': 'Submit'}} </button>
+          <p class="successMessage" *ngIf="!invalidFormSubmitted" [ngStyle]="{'visibility': successfulSubmission ? 'visible' : 'hidden'}" > Submitted! You will receive an email with more details soon :)</p>
+          <button class="submitBtn" *ngIf="!(submitted && successfulSubmission)" type="submit" >{{submitted ? successfulSubmission ? 'Success!' : 'Submitting...': 'Submit'}} </button>
           <img [ngStyle]="{'visibility': submitted ? successfulSubmission ? 'hidden' : 'visible' : 'hidden'}" class="catGif" src="../../assets/catLoad.gif"/>
-          <p class="successMessage" [ngStyle]="{'visibility': successfulSubmission ? 'visible' : 'hidden'}" > Thanks for reaching out! You will receive an email soon with more details :)</p>
         </div>
       </div>
     </div>
   </form>
 </div>
-
-<!--submission? successful submission?-->

@@ -133,13 +133,35 @@ p {
 }
 
 .successMessage {
-    padding-top: 5vh;
+    // padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 button {
     margin-top: 3% !important;
     background-color: white;
     border: 1px solid black;
+}
+
+button:disabled {
+    color: black;
+    opacity: 0.5;
+}
+
+
+.fieldDisabled
+{
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .container {
