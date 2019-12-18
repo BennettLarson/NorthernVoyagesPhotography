@@ -103,9 +103,6 @@
 .blackText {
     color: black !important;
 }
-.coloredBackground {
-    background: white;
-}
 
 .nav-item {
     margin-left: auto;
@@ -127,6 +124,7 @@ img {
 .navbar {
     z-index: 9;
     margin:0px auto; 
+    position: absolute;
 }
 
 .navbar-nav {

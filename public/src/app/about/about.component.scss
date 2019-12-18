@@ -8,6 +8,7 @@ html, body {
     max-width: 75%;
     margin: 0 auto;
     padding: 75px 0;
+    height: 100vh;
   }
   
   p {
@@ -16,7 +17,7 @@ html, body {
   
   .ParallaxContainer {
     background: url("https://northernvoyages.blob.core.windows.net/northern-voyages-images/_DSC8860-min.jpg") no-repeat;
-    height: 75vh;
+    height: 100vh;
   
     background-position: center;
     background-repeat: no-repeat;

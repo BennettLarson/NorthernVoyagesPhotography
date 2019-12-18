@@ -109,9 +109,9 @@ select:invalid {
     color: grey;
 }
 
-.myForm {
-    margin-top: -5%;
-}
+// .myForm {
+//     margin-top: -5%;
+// }
 
 .mainLabel {
     position: relative;
@@ -165,3 +165,14 @@ input:-webkit-autofill:active {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.ParallaxContainer {
+    background: url("https://northernvoyages.blob.core.windows.net/northern-voyages-images/_DSC8860-min.jpg") no-repeat;
+    height: 100vh;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  

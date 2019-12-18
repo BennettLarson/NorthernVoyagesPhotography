@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md" [ngClass]="currentPage === '/' ? 'navbar-dark' : 'navbar-light'" >
+<nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand" href="#">
-      <img [src]="currentPage === '/' ? '../assets/logoInverse.png' : '../assets/logo.png'" alt="">
+      <img [src]="'../assets/logoInverse.png'" alt="">
     </a>
     <button #toggler class="navbar-toggler" (click)="collapse = ! collapse" type="button" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,38 +8,31 @@
         <div class="collapse navbar-collapse" [ngClass]="!collapse ? 'show' : ''" >
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link" routerLink="about" 
-                [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">About</a>
+            <a class="nav-link whiteText" routerLink="about">About</a>
             </li>
-            <li class="nav-item dropdown" (mouseenter)="showWeddingDropdown = true" (mouseleave)="showWeddingDropdown = false">
-                <a href="#" class="nav-link dropdown-toggle" 
+            <li class="nav-item dropdown" (mouseleave)="showWeddingDropdown = false">
+                <a href="#" class="nav-link dropdown-toggle whiteText" 
                     data-toggle="dropdown"
-                    id="weddingDropdownLink"
-                    [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Weddings</a>
+                    id="weddingDropdownLink" (mouseenter)="showWeddingDropdown = true">Weddings</a>
                 <div class="dropdown-menu" aria-labelledby="weddingDropdownLink" [ngClass]="{'showDropdown': showWeddingDropdown, 'homeMenu': currentPage === '/'}">
-                    <a class="nav-link dropdown-item"  routerLink="wedding" 
-                        [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showWeddingDropdown = false">Weddings</a>
-                    <a class="nav-link dropdown-item"  routerLink="elopement"
-                        [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showWeddingDropdown = false">Elopements</a>
+                    <a class="nav-link dropdown-item whiteText"  routerLink="wedding" (click)="showWeddingDropdown = false">Weddings</a>
+                    <a class="nav-link dropdown-item whiteText"  routerLink="elopement" (click)="showWeddingDropdown = false">Elopements</a>
                 </div>
             </li>
             <li class="nav-item logo">
-                <a class="nav-link" routerLink="" ><img [src]="currentPage === '/' ? '../assets/logoInverse.png' : '../assets/logo.png'"/></a>
+                <a class="nav-link" routerLink="" ><img [src]="'../assets/logoInverse.png'"/></a>
             </li>
-            <li class="nav-item dropdown" (mouseenter)="showPortraitDropdown = true" (mouseleave)="showPortraitDropdown = false">
-                <a href="#" class="nav-link dropdown-toggle"
+            <li class="nav-item dropdown" (mouseleave)="showPortraitDropdown = false">
+                <a href="#" class="nav-link dropdown-toggle whiteText"
                     data-toggle="dropdown"
-                    id="portraitDropdownLink"
-                    [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Portraits</a>
+                    id="portraitDropdownLink" (mouseenter)="showPortraitDropdown = true" >Portraits</a>
                 <div class="dropdown-menu" aria-labelledby="portraitDropdownLink" [ngClass]="{'showDropdown': showPortraitDropdown, 'homeMenu': currentPage === '/'}">
-                <a class="nav-link dropdown-item"  routerLink="couple" 
-                    [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showPortraitDropdown = false">Couples</a>
-                <a class="nav-link dropdown-item"  routerLink="family"
-                    [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'" (click)="showPortraitDropdown = false">Family</a>
+                <a class="nav-link dropdown-item whiteText"  routerLink="couple" (click)="showPortraitDropdown = false">Couples</a>
+                <a class="nav-link dropdown-item whiteText"  routerLink="family"(click)="showPortraitDropdown = false">Family</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="contact" [ngClass]="currentPage === '/' ? 'whiteText' : 'blackText'">Inquire </a>
+                <a class="nav-link whiteText" routerLink="contact">Inquire</a>
             </li>
         </ul>
     </div>
