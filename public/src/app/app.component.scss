@@ -42,9 +42,12 @@
     }
 
     .socialMedia {
+        z-index: 999;
+        top: 20vw;
+        left: 4vw;
         height: 1em;
         font-size: 1.5em;
-        position: absolute;
+        position: relative;
         color: white;
         width: 2em;
     }
@@ -80,6 +83,7 @@
     }
 
     .socialMedia {
+        z-index: 999;
         top: 0.5em;
         left: 0.7em;
         height: 1em;
