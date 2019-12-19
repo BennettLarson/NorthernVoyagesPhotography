@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark">
-    <span class="socialMedia">
+    <span class="socialMedia" [ngStyle]="{'top': collapse ? '38%' : '15%'}">
         <i class="fa fa-instagram" aria-hidden="true" (click)="navigateToInstagram()"></i>
         <i class="fa fa-facebook" aria-hidden="true" (click)="navigateToFacebook()"></i>
     </span>
