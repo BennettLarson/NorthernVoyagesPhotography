@@ -41,6 +41,24 @@
         font-size: 85%;
     }
 
+    .socialMedia {
+        height: 1em;
+        font-size: 1.5em;
+        position: absolute;
+        color: white;
+        width: 2em;
+    }
+
+    .fa-instagram:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    .fa-facebook:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    
     .dropdown-item {
         font-size: 65% !important;
         text-align: center;
@@ -69,6 +87,16 @@
 
     .showDropdown {
         visibility: visible !important;
+    }
+
+    .socialMedia {
+        top: 0.5em;
+        left: 0.7em;
+        height: 1em;
+        font-size: 2vw;
+        position: absolute;
+        color: white;
+        width: 2.2em;
     }
 
     .dropdown-menu {
@@ -120,6 +148,13 @@ img {
 }
 
 
+.fa-instagram {
+    float: left;
+}
+
+.fa-facebook {
+    float: right;
+}
 
 .navbar {
     z-index: 9;

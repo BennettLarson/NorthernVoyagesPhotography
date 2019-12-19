@@ -29,4 +29,12 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.currentPage = this.router.url;
   }
+
+  navigateToInstagram() {
+    window.open("https://www.instagram.com/northernvoyages/", "_blank");
+  }
+
+  navigateToFacebook() {
+    window.open("https://www.facebook.com/northernvoyagesphoto/", "_blank")
+  }
 }
