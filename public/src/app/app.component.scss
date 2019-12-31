@@ -71,6 +71,10 @@
     .dropdown-menu.show {
         display: contents;
     }
+
+    .margin-top-24px {
+        margin-top: -24px;
+    }
 }
 
 @media(min-width: 768px) {
